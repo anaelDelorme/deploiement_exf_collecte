@@ -9,18 +9,6 @@ shiny:
   s3:
     enabled: true
     existingSecret: suivicollecteexf-s3
-  postgresql:
-    enabled: true
-    auth:
-      username: myusername
-      database: defaultdb
-      existingSecret: myshinyapp-postgresql
-    containerPorts:
-      postgresql: 5432
-    fullnameOverride: postgresql-db
-    primary:
-      persistence:
-        size: 2Gi
   resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
   # choice for the user. This also increases chances charts run on environments with little
